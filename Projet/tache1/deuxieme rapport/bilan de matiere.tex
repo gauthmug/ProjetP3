@@ -149,7 +149,9 @@ $n_f$ & 0 & 0 & 2\cdot0.78 a \\\hline
 \caption{Tableau d'avancement de la synthèse de l'ammoniac}
 \end{figure}
 
-Au terme de ce procédé, nous aurons donc produit $1.56a$ moles de \ce{NH3}. Cette quantité est liée au nombre de moles de \ce{CH4} introduites dans le réacteur (i.e. $x$) par les deux équations obtenues plus haut:
+Au terme de ce procédé, nous aurons donc produit $1.56a$ moles de \ce{NH3}. Cette quantité
+est liée au nombre de moles de \ce{CH4} introduites dans le réacteur (i.e. $x$) par les deux
+équations obtenues plus haut:
 \[
 \left \{
 \begin{array}
@@ -158,10 +160,16 @@ Au terme de ce procédé, nous aurons donc produit $1.56a$ moles de \ce{NH3}. Ce
 \end{array}
 \right.
 \]
-En simplifiant, on obtient: $4x = 2.76\cdot a$. Nous avons maintenant la quantité de \ce{CH4} introduite dans le réacteur par jour en fonction de la quantité d'ammoniac produite. Mais nous n'avons pas encore d'information à propos de la quantité d'eau nécessaire.
+En simplifiant, on obtient: $4x = 2.76\cdot a$. Nous avons maintenant la quantité de \ce{CH4} introduite
+dans le réacteur par jour en fonction de la quantité d'ammoniac produite. Mais nous n'avons pas encore
+d'information à propos de la quantité d'eau nécessaire.
 
 
-Afin d'obtenir une relation avec le nombre de moles d' \ce{H2O} introduites dans le réacteur (i.e. $y$), nous devons utiliser les constantes d'équilibre des deux premières réactions. Pour une certaine température $T$ [\unit{}{\kelvin}], nous avons l'expression suivante pour $K_1 (T)$ et $K_2 (T)$ , respectivement les constantes d'équilibre de la première et de la deuxième équation:
+Afin d'obtenir une relation avec le nombre de moles d' \ce{H2O} introduites dans
+le réacteur (i.e. $y$), nous devons utiliser les constantes d'équilibre des deux premières
+réactions. Pour une certaine température $T$ [\unit{}{\kelvin}], nous avons l'expression
+suivante pour $K_1 (T)$ et $K_2 (T)$ , respectivement les constantes d'équilibre de la première et
+de la deuxième équation:
 \[
 \left \{
 \begin{array}
@@ -170,4 +178,13 @@ Afin d'obtenir une relation avec le nombre de moles d' \ce{H2O} introduites dans
 \end{array}
 \right.
 \]
-Nous pouvons calculer la valeur théorique de ces constantes d'équilibre en fonction de la température avec \textsc{Matlab} (voir code en Annexe), en posant la pression du reformeur primaire à \unit{30}{\bbar}. Il nous reste donc \numprint{4} équations à \numprint{4} inconnues et \numprint{2} paramètres: la température $T$ et $a$ le nombre de moles d'air introduites dans le réacteur. À partir de ces équations, nous avons crée un outil de gestion permettant de réaliser le calcul d'approvisionnement nécessaire en matière première, en fonction de la température et de la capacité d'ammoniac à produire (cfr section ??????? ).
+Nous pouvons calculer la valeur théorique de ces constantes d'équilibre en fonction de la
+température avec \textsc{Matlab} (voir code en Annexe), en posant la pression du reformeur
+primaire à \unit{30}{\bbar}. Il nous reste donc \numprint{4} équations à \numprint{4} inconnues
+et \numprint{2} paramètres: la température $T$ et $a$ le nombre de moles d'air introduites dans le
+réacteur. À partir de ces équations, nous avons crée un outil de gestion permettant de réaliser le calcul
+d'approvisionnement nécessaire en matière première, en fonction de la température et de la capacité
+d'ammoniac à produire (cfr section ??????? ).
+
+
+\end{document}
