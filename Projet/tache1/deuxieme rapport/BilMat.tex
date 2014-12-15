@@ -94,7 +94,7 @@ $n_f$ & $0$ & $0$ & $F_{\ce{CH4}}-\xi_2$ & $\xi_1+\xi_2+2F_{\ce{CH4}}$ \\\hline
 \caption{Tableau d'avancement de la réaction du reformage secondaire}
 \end{figure}
 
-Dans le réacteur Water-Gas-Shift, tout le \ce{CO} aura réagi, mais il faudra séparer
+Dans le réacteur Water-Gas-Shift, tout le \ce{CO} aura réagi mais il faudra séparer
 l'eau restante, et absorber le \ce{CO2}. Nous obtenons l'expression du débit molaire d'eau sortant grâce au tableau .
 
 \begin{figure}[h]
@@ -158,14 +158,14 @@ quantité est liée au débit molaire de \ce{CH4} introduites dans le réacteur 
 \]
 En simplifiant, on obtient: $4 \cdot F_{\ce{CH4}} = 2.76 \cdot F_{\text{air}}$. Nous avons maintenant la quantité de \ce{CH4} introduite
 dans le réacteur par jour en fonction de la quantité d'ammoniac produite. Notons que la température n'a pas d'effet
-sur cette quantité. Mais nous n'avons pas encore d'information à propos de la quantité d'eau nécessaire.
+sur cette quantité. Toutefois, nous n'avons pas encore d'information à propos de la quantité d'eau nécessaire.
 
 
 Afin d'obtenir une relation avec le nombre de moles d'\ce{H2O} introduites dans le réacteur (i.e. $F_{\ce{H2O}}$), nous
 devons utiliser les constantes d'équilibre des deux premières réactions. Pour une certaine
-température $T$ [\unit{}{\kelvin}], nous avons l'expression suivante pour $K_1 (T)$ et $K_2 (T)$, respectivement les
-constantes d'équilibre de la première et de la deuxième équation, avec $p_{tot}$ la pression totale dans le système et $(p\degree)^2$ la
-pression standard de \unit{1}{bar}:
+température $T$ [$\kelvin$], nous avons l'expression suivante pour $K_1 (T)$ et $K_2 (T)$, respectivement les
+constantes d'équilibre de la première et de la deuxième équation, avec $p_{tot}$ la pression totale dans le système et $p\degree$ la
+pression standard de \unit{1}{\bbar}:
 \[
 \left \{
 \begin{array}
@@ -176,7 +176,7 @@ pression standard de \unit{1}{bar}:
 \right.
 \]
 Nous pouvons calculer la valeur théorique de ces constantes d'équilibre en fonction de la température
-avec \textsc{MATLAB} (voir code en Annexes), en posant la pression du reformeur primaire
+avec \textsc{Matlab} (voir code en Annexes), en posant la pression du reformeur primaire
 à \unit{30}{\bbar}\footnote{Valeur conseillée sur iCampus, consulté le mercredi 3 octobre 2014}.
 Il nous reste donc \numprint{4} équations à \numprint{4} inconnues et \numprint{2} paramètres: la
 température $T$ et $F_{\text{air}}$ le nombre de moles d'air introduites dans le réacteur. À partir de ces équations, nous avons
