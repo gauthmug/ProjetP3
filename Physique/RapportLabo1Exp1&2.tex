@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{report}
+\documentclass[10pt,a4paper]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[francais]{babel}
 \usepackage[T1]{fontenc}
@@ -6,63 +6,124 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{fullpage}
 \author{Groupe 1246}
+\usepackage[squaren,Gray]{SIunits}
+\usepackage{numprint}
+\usepackage{mhchem}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{chemist}
+
+
+\author{Groupe 1246}
+
+
 \begin{document}
-\section{Rapport pts 1 et 2}
+
+
+\section*{Rapport Labo S5}
 Nous avons commencé par mesurer les angles de réflexion et de réfraction pris par le faisceau dans plusieurs situations.Premièrement nous avons commencé avec le cas où les rayons était réfléchis sans passer dans le milieu de la lucite Nos résultats sont repris dans le tableau suivant:
 
+\begin{figure}[ht!]
+\centering
 \begin{tabular}{|c|c|c|}
 \hline 
-Angle réfléchis & Angle réfracté & n_2 \\ 
+Angle réfléchi & Angle réfracté & n_2 \\ 
 \hline 
-10\degre & 7\degre & 1.42 \\ 
+10\degree & 7\degree & 1.42 \\ 
 \hline 
-20\degre & 13\degre & 1.52 \\ 
+20\degree & 13\degree & 1.52 \\ 
 \hline 
-30\degre & 21\degre & 1.39 \\ 
+30\degree & 21\degree & 1.39 \\ 
 \hline 
-40\degre & 26\degre & 1.46 \\ 
+40\degree & 26\degree & 1.46 \\ 
 \hline 
-50\degre & 30\degre & 1.53 \\ 
+50\degree & 30\degree & 1.53 \\ 
 \hline 
-60\degre & 35\degre & 1.51 \\ 
+60\degree & 35\degree & 1.51 \\ 
 \hline 
-70\degre & 37.5\degre & 1.54 \\ 
+70\degree & 37.5\degree & 1.54 \\ 
 \hline 
-80\degre & 40\degre & 1.53 \\ 
+80\degree & 40\degree & 1.53 \\ 
 \hline 
 \end{tabular} 
-
-La loi de Snell Descartes (pour rappel: $n_1 \cdot sin_{\Theta _{1}} =n_2 \cdot sin_{\Theta _2}$)est bien vérifiée et les résultats de calcul de l'indice de réfraction ($n_{2}$) de la lucite sont repris dans le tableau. 
-
-Nous pensons que le manque de précision dans le calcul du $n_{2}$ pour des petits angles vient du fait que nos mesures de l'angle réfracté n'étant pas parfaitement précise, l'erreur se fait plus sentir lors des calculs pour les petits angles. Autrement:
-
-soit $\Theta _2$ l'angle de réfraction obtenu
-
-soit $i$ l'imprecision de mesure
-
-soit $\Theta _t$ l'angle de réfraction théorique
-
-on a : $\Theta _2 =\Theta _t + i $
-
-pour des petits angles on a : $sin \alpha \approx \alpha$
-
-L'erreur $i$ a donc une plus grande influence pour des calculs sur des petits angles que sur des angles plus grand, avec lesquels elle devient presque insignifiante.
-
-
-Nous avons ensuite effectué les même mesures d'angle lorsque la face arrondi du polymère était placée vers le laser. Les résultats sont les suivant:
+\end{figure}
 
 
 
-Nous avons déterminé que l'angle critique était de 43\degre .
+La loi de \textcs{Snell-Descartes} (pour rappel: $n_1 \cdot \sin(\theta _{1}) = n_2 \cdot \sin(\theta _2)$) est bien vérifiée et les résultats de calcul de l'indice de réfraction ($n_{2}$) de la lucite sont repris dans le tableau. 
 
-on sait que:
+Nous pensons que le manque de précision dans le calcul du $n_{2}$ pour de petits angles vient du fait que nos mesures de l'angle réfracté n'étant pas parfaitement précises, l'erreur se fait plus sentir lors des calculs pour les petits angles. Autrement:
 
-$sin(\Theta _crit) = \dfrac{n_2}{n_1} = \dfrac{n_{air}}{n_{luc}}$ 
+soit $\theta _2$ l'angle de réfraction obtenu
 
-de la on trouve que $n_{luc} = 1.46$
+soit $i$ l'imprécision de mesure
 
-on trouve alors que l'erreur pour un n_{théo} valant 1.49 vaut 2.01 %.
+soit $\theta _t$ l'angle de réfraction théorique
+
+on a : $\theta _2 =\theta _t + i $
+
+pour des petits angles on a : $\sin(\alpha) \approx \alpha$
+
+L'erreur $i$ a donc une plus grande influence pour des calculs sur de petits angles que sur des angles plus grands, avec lesquels elle devient presque insignifiante.
+
+
+Nous avons ensuite effectué les même mesures d'angle lorsque la face arrondi du polymère était placée vers le laser. Les résultats sont les suivants:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c||c|c|c|}
+\hline
+Angle & Mesure1 & Mesure2 & Moyenne arithmétique\\
+\hline
+$10 \degree$ & $44 \degree$ & $47 \degree$ & $45.5 \degree$ \\
+\hline
+$20 \degree$ & $51 \degree$ & $47 \degree$ & $49 \degree$ \\
+\hline
+$30 \degree$ & $55 \degree$ & $60 \degree$ & $57.5 \degree$ \\
+\hline
+$40 \degree$ & $70 \degree$ & $70 \degree$ & $70 \degree$ \\
+\hline
+$50 \degree$ & $85 \degree$ & $90 \degree$ & $87.5 \degree$ \\
+\hline
+$60 \degree$ & $-80 \degree$ & $-75 \degree$ & $-77.5 \degree$ \\
+\hline
+$70 \degree$ & $-60 \degree$ & $-60 \degree$ & $-60 \degree$ \\
+\hline
+$80 \degee$ & $-45 \degee$ & $-50 \degree$ & $-47.5 \degree$ \\
+
+\hline
+\end{tabular}
+\caption{Angle perpendiculaire à l'angle de polarisation après reflexion}
+\label{tab:tvarie}
+\end{table}
+
+$$\tan(\pi - \alpha) = \displaystyle \dfrac{\overrightarrow{{E_r}_\perp}}{\overrightarrow{{E_r}_{\slash\slash}}} = \displaystyle \dfrac{\Gamma_\perp \overrightarrow{E_\perp}}{\Gamma_{\slash\slash} \overrightarrow{E_{\slash\slash}}} = \displaystyle \dfrac{\Gamma_\perp}{\Gamma_{\slash\slash}}$$
+
+
+
+
+
+Nous avons déterminé que l'angle critique était de 43\degree.
+
+Nous savons que:
+
+$\sin(\theta_{crit}) = \dfrac{n_2}{n_1} = \dfrac{n_{air}}{n_{luc}}$ 
+
+de là on trouve que $n_{luc} = 1.46$
+
+on trouve alors que l'erreur pour un $n_{\text{théorique}}$ valant 1.49 vaut 2.01.
  
-Utiliser un prisme hémi-cylindrique permet de garder le rayon complet, sans réfraction, jusqu'à son point de réflexion. On peut donc faire les calcul comme si le rayon évoluait dans l'air. Cela évite aussi une modifiaction de l'angle incident.
+Utiliser un prisme hémicylindrique permet de garder le rayon complet, sans réfraction, jusqu'à son point de réflexion. On peut donc faire les calcul comme si le rayon évoluait dans l'air. Cela évite aussi une modification de l'angle incident.
+
+#KikouEmme-Cé #Kassededi #FullPatéCeRapport
 \end{document}
